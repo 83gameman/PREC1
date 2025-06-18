@@ -1,0 +1,650 @@
+@charset "utf-8";
+/*
+	공통 css
+*/
+
+/* default */
+
+@charset "utf-8";
+/* default */
+* {
+	margin: 0;
+	padding: 0;
+	word-break: break-all;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	text-size-adjust: none;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+body {
+	font-family: 'Malgun Gothic', '맑은 고딕', 'malgun', Dotum, verdana,
+		sans-serif;
+	font-size: 12px;
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a,
+	address, em, img, strong, dl, dt, dd, ol, ul, li, fieldset, form, label,
+	legend, input, textarea, table, caption, tbody, tfoot, thead, tr, th,
+	td, header, footer, nav, menu, section, article, aside, main, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+header, footer, section, article, aside, nav, main, details, menu,
+	figure, figcaption, video {
+	display: block;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+table th, table td {
+	text-align: center;
+	vertical-align: middle;
+	font-weight: normal;
+	font-family: 'Malgun Gothic', '맑은 고딕', 'malgunweb';
+}
+
+table td, table td {
+	word-break: break-all;
+}
+
+ol, ul, li {
+	list-style: none outside none;
+}
+
+a {
+	text-decoration: none;
+	color: #333
+}
+
+a:hover, a:visited {
+	text-decoration: none;
+}
+
+button {
+	border: 0;
+	background: none;
+	cursor: pointer;
+	padding: 0;
+	font-family: 'Malgun Gothic', '맑은 고딕', 'malgunweb';
+	position: relative;
+}
+
+button span {
+	position: relative;
+	font-family: 'Malgun Gothic', '맑은 고딕', 'malgunweb';
+}
+
+button:disabled {
+	opacity: .5;
+	filter: alpha(opacity = 50);
+}
+
+img {
+	border: 0 none;
+	max-width: 100%;
+}
+
+form input, form select, form label, form img, select {
+	vertical-align: middle;
+}
+
+fieldset {
+	border: 0 none;
+}
+
+em, address {
+	font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+
+strong {
+	font-weight: normal;
+}
+
+iframe {
+	margin: 0;
+	padding: 0;
+}
+
+audio, canvas, progress, video {
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+input[type="text"], input[type="password"] {
+	font-family: 'Malgun Gothic', '맑은 고딕', 'malgunweb';
+	color: #333;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+input[type="search"], input[type="tel"], input[type="number"], input[type="password"]
+	{
+	-webkit-appearance: none;
+	border-radius: 0;
+	font-family: 'Malgun Gothic', '맑은 고딕', 'malgunweb';
+	color: #333;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+fieldset legend, table caption {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	line-height: 0;
+	color: transparent;
+	position: absolute;
+	top: 0;
+	left: -99999px;
+}
+
+table td.nodata {
+	background: none !important;
+	padding:14px 0 !important;
+}
+
+textarea {
+	resize: none;
+	font-family: 'Malgun Gothic', '맑은 고딕', 'malgunweb';
+	color: #333;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border: 1px solid #b2b9be;
+}
+
+@media print {
+	.container {
+		width: auto;
+	}
+}
+
+.vmid {
+	vertical-align: middle;
+}
+
+.dink {
+	display: inline-block;
+}
+
+.fsel {
+	font-family: 'Malgun Gothic', '맑은 고딕', 'malgunweb';
+	color: #333;
+	padding: 0 15px 2px 8px;
+	height: 32px;
+	box-sizing: border-box;
+	min-width: 80px;
+	border: 1px solid #c5c5c5;
+	background: #fff url("../images/bg_fsel.png") no-repeat 100% 50%;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.fsel.type2 {
+	padding: 0 32px 2px 12px;
+	height: 29px;
+	min-width: 80px;
+	border: 1px solid #cecece;
+	border-radius: 3px;
+	background: #fff url("../images/ico_fsel.png") no-repeat 100% 50%;
+}
+
+.msie8 select {
+	background: none;
+	padding: 0 0 0 5px;
+}
+
+.msie9 select {
+	background: none;
+	padding: 0 0 0 5px;
+}
+
+.fsel:focus {
+	border-color: #000;
+}
+
+.fsel.ftype2 {
+	font-size: 14px;
+	padding: 0 30px 0 7px;
+	background-position: 102% 50%;
+	min-width: 40px;
+	font-weight: 350;
+}
+
+.msie9 select {
+	background: none;
+	padding-right: 0 !important;
+}
+
+select {
+	letter-spacing: -1px;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+select::-ms-value {
+	background: none;
+	color: #333;
+}
+
+select:disabled {
+	background-color: #e3e3e3;
+}
+
+.fint {
+	border: 1px solid #c5c5c5;
+	padding: 5px 10px;
+	font-size: 14px;
+	vertical-align: middle;
+	height: 32px;
+	box-sizing: border-box;
+}
+
+.fint:focus {
+	border-color: #000;
+}
+
+.fint.bgtype2 {
+	background: #f6f6f6;
+}
+
+.fint.datepicker {
+	padding-right: 30px;
+	background: url("../images/ico_cal.png") no-repeat 100% 50%;
+	min-width: 120px;
+}
+
+@media screen and (-ms-high-contrast: active) , ( -ms-high-contrast :
+	none) {
+	.fint {
+		padding: 3px 10px 7px;
+	}
+}
+
+.farea {
+	border: 1px solid #dfdfdf;
+	padding: 5px 10px;
+	font-size: 14px;
+	vertical-align: middle;
+	box-sizing: border-box;
+	border-radius: 2px;
+}
+
+.wp40 {
+	box-sizing: border-box;
+	width: 40%;
+}
+
+.wp50 {
+	box-sizing: border-box;
+	width: 49%;
+}
+
+.wp100 {
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.wd110 {
+	width: 110px;
+}
+
+/* common */
+/* skip navigation */
+.skiplist {
+	position: relative;
+	z-index: 9999;
+	margin: 0;
+	padding: 0;
+}
+
+.skip {
+	display: none;
+	font-family: 'Noto Sans Korean', dotum;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+} /*All incl Opera*/
+/* * html */
+.skip {
+	display: block
+} /*Seen by IE*/
+:root .skip {
+	display: block
+} /*Seen by Moz, FF and Safari*/
+.skip a {
+	padding: 0 0.5em;
+	display: inline;
+	z-index: 1000;
+	text-decoration: none;
+	position: absolute;
+	width: 14em;
+	left: -200em;
+}
+
+.skip a:focus, .skip a:active {
+	position: absolute;
+	left: 0;
+	padding: 10px;
+	border: solid #333 1px;
+	color: #fff;
+	background: #000;
+}
+
+.skip a:hover {
+	cursor: default
+}
+/* //skip navigation */
+.bsym {
+	font-weight: 700 !important;
+}
+
+.ellips {
+	display: inline-block;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	position: relative;
+	max-width: 99%;
+}
+
+.hdtext {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	line-height: 0;
+	color: transparent;
+	position: absolute;
+	top: 0;
+	left: -99999px;
+}
+
+.clearboth {
+	clear: both;
+	display: block;
+	height: 0;
+}
+
+.hidden {
+	overflow: hidden;
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+	width: 1px;
+	height: 0;
+	font-size: 1px;
+}
+
+.alignc {
+	text-align: center !important;
+}
+
+.alignr {
+	text-align: right !important;
+}
+
+.alignl {
+	text-align: left !important;
+}
+
+.vtop {
+    vertical-align: top;
+}
+
+.fl {
+	float: left !important;
+}
+
+.fr {
+	float: right !important;
+}
+
+.mt0 {
+	margin-top: 0 !important;
+}
+
+.mt5 {
+	margin-top: 5px !important;
+}
+
+.mt10 {
+	margin-top: 10px !important;
+}
+
+.mt15 {
+	margin-top: 15px !important;
+}
+
+.mt20 {
+	margin-top: 20px !important;
+}
+
+.mt25 {
+	margin-top: 25px !important;
+}
+
+.mt30 {
+	margin-top: 30px !important;
+}
+
+.mt35 {
+	margin-top: 35px !important;
+}
+
+.mt40 {
+	margin-top: 40px !important;
+}
+
+.mt50 {
+	margin-top: 50px !important;
+}
+
+.mt60 {
+	margin-top: 60px !important;
+}
+
+.mt70 {
+	margin-top: 70px !important;
+}
+
+.mt80 {
+	margin-top: 80px !important;
+}
+
+.mt90 {
+	margin-top: 90px !important;
+}
+
+.ml0 {
+	margin-left: 0 !important;
+}
+
+.ml10 {
+	margin-left: 10px !important;
+}
+
+.ml20 {
+	margin-left: 20px !important;
+}
+
+.pt0 {
+	padding-top: 0 !important;
+}
+
+.pb0 {
+	padding-bottom: 0 !important;
+}
+
+.pr0 {
+	padding-right: 0 !important;
+}
+
+.pl10 {
+	padding-left: 10px !important;
+}
+
+.pl20 {
+	padding-left: 20px !important;
+}
+
+.mb0 {
+	margin-bottom: 0 !important;
+}
+
+.mb5 {
+	padding-bottom: 5px !important;
+}
+
+.mb10 {
+	margin-bottom: 10px !important;
+}
+
+.fl {
+	float: left !important;
+}
+
+.txtleft {
+	text-align: left !important;
+}
+
+.pbt20 {
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+
+.pcitem {
+	display: block !important;
+}
+
+.pcitem2 {
+	display: inline-block !important;
+}
+
+.pr0 {
+	padding-right: 0 !important;
+}
+
+.mitem2, .mitem {
+	display: none !important;
+}
+
+.vat {
+	vertical-align: top !important;
+}
+
+.vshidden {
+	visibility: hidden !important;
+}
+
+.valigntop {
+	vertical-align: top !important;
+}
+
+.fint::-webkit-input-placeholder {
+	color: #a6a6a6;
+	font-weight: 300;
+}
+
+.fint::-moz-input-placeholder {
+	color: #a6a6a6;
+	font-weight: 300;
+}
+
+.fint:-ms-input-placeholder {
+	color: #a6a6a6;
+	font-weight: 300;
+}
+
+.fint::-ms-input-placeholder {
+	color: #a6a6a6;
+	font-weight: 300;
+}
+
+.fint::input-placeholder {
+	color: #a6a6a6;
+	font-weight: 300;
+}
+
+.touchDis {
+	touch-action: none;
+	overflow: hidden;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+}
+
+.touchDis2 {
+	touch-action: none;
+	overflow: hidden;
+	position: relative;
+}
+
+::-webkit-input-placeholder {
+	color: #a4a4a4;
+	font-weight: 300;
+}
+
+::-moz-input-placeholder {
+	color: #a4a4a4;
+	font-weight: 300;
+}
+
+:-ms-input-placeholder {
+	color: #a4a4a4;
+	font-weight: 300;
+}
+
+::-ms-input-placeholder {
+	color: #a4a4a4;
+	font-weight: 300;
+}
+
+::input-placeholder {
+	color: #a4a4a4;
+	font-weight: 300;
+}
+
+@media screen and (min-color-index:0) and
+	(-webkit-min-device-pixel-ratio:0) {
+	textarea {
+		font-size: 14px;
+	}
+}
+
+@media ( max-width :1000px) {
+	.pcitem2, .pcitem {
+		display: none !important;
+	}
+	.mitem {
+		display: block !important;
+	}
+	.mitem2 {
+		display: inline-block !important;
+	}
+}
