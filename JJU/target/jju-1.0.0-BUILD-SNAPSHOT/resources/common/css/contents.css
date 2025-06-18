@@ -12,7 +12,7 @@
 .background::before{height:100%;width:100%;content:"";background:url("/main/img/background1.jpg") no-repeat 0 0;background-size:cover;opacity:0.2;position:absolute;top:0px;left:0px;right:0px;bottom:0px;}
 
 /* 로그인 */
-.logo_box{text-align:left;width:500px;margin:150 auto;position:relative;overflow:hidden;border-radius:10px;}
+.logo_box{text-align:left;width:500px;margin:100 auto;position:relative;overflow:hidden;border-radius:10px;}
 .login_box_w{text-align:left;width:800px;margin:150 auto;position:relative;overflow:hidden;border-radius:10px;
 -webkit-box-shadow: 2px 2px 24px -6px rgba(0,0,0,0.7);
 -moz-box-shadow: 2px 2px 24px -6px rgba(0,0,0,0.7);
